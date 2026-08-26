@@ -1975,3 +1975,61 @@ html {
         order: 3;
     }
 }
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Stats */
+    .stats,
+    .stats-grid,
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        width: 100% !important;
+    }
+
+    /* Service / Industry cards */
+    .services-grid,
+    .service-grid,
+    .industries-grid,
+    .industry-grid,
+    .cards-grid {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+
+    /* Cards */
+    .service-card,
+    .industry-card,
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* Hero heading */
+    h1 {
+        font-size: clamp(38px, 10vw, 58px);
+        line-height: 1.05;
+    }
+
+    /* Hero paragraph */
+    p {
+        max-width: 100%;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
